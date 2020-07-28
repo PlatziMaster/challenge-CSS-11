@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  background-color: #E7E9F1;
+  font-family: 'Montserrat', sans-serif;;
+}
+.container{
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+  border-radius: 1.1rem;
+  background-color: white;
+}
+.container__title {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  padding: 1rem 6rem 1rem 1rem;
+  border-radius: 1.1rem;
+  background-color: #F5F6F8;
+  color: #999BB0;
+}
+.container__next{
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  place-items: center;
+  padding: 0 1.2rem;
+  border-radius: 1.1rem;
+  font-size: 25px;
+  border: 2px solid #F5F6F8;
+  cursor: pointer;
+}
+.container__list {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container__button {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
+  padding: .8rem 0;
+  border-radius: 1.1rem;
+  text-align: center;
+  color: white;
+  background-color: #1850FF;
+  box-shadow: 0px 10px 20px #a5bbfd;
+  cursor: pointer;
+}
+.container__options {
+  margin: 1.2rem 0;
+}
+[type="checkbox"] {
+  display: none;
+}
+.container__options label {
+  padding-left: 2rem;
+  position: relative;
+  color: #c1c3ce;
+}
+.container__options label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 1.2rem;
+  height: 1.1rem;
+  border-radius: 3px;
+  background-color: #E7E9F1;
+}
+[type="checkbox"]:checked + label::before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  padding-top: 4px;
+  font-size: .8em;
+  text-align: center;
+  color: white;
+  background-color: #1850FF;
+}
+[type="checkbox"]:checked + label {
+  color: rgb(60, 61, 65);
+}

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+body {
+  align-items: center;
+  background-color: #e8e9f1;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  justify-content: center;
+}
+main {
+  background-color: white;
+  border-radius: 50px;
+  height: 400px;
+  padding: 30px;
+  width: 300px;
+}
+.main-form {
+  display: grid;
+  gap: 10px;
+  grid-template: repeat(6, 1fr) / 70% 30%;
+
+  height: 100%;
+  width: 100%;
+}
+.main-form input:first-child {
+  background-color: #f4f6f8;
+  border: none;
+  border-radius: 20px;
+  color: #505161;
+  font-size: 1.2em;
+  grid-column: 1;
+  grid-row: 1;
+  padding: 0 20px;
+  text-transform: capitalize;
+}
+::placeholder {
+  color: #8b8ca5;
+}
+.next-button {
+  align-items: center;
+  align-self: center;
+  border: 2px solid #e6e6e7;
+  border-radius: 30%;
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+  height: 100%;
+  justify-content: center;
+  justify-self: center;
+  margin: 0 20px;
+  text-decoration: none;
+  width: 70%;
+}
+.next-button span {
+  color: black;
+  font-size: 2.5em;
+}
+.main-form label {
+  align-self: center;
+  grid-column: 1;
+  grid-row: span 1;
+}
+label > input[type="checkbox"] {
+  display: none;
+}
+label > input[type="checkbox"] + *::before {
+  background-color: #eaeef1;
+  border-radius: 0.5rem;
+  content: "";
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5em;
+  margin-right: 2em;
+  vertical-align: bottom;
+  width: 1.5em;
+}
+label > input[type="checkbox"]:checked + *::before {
+  background: #1749ff;
+  border-color: #1749ff;
+  color: white;
+  content: "✔";
+  text-align: center;
+}
+.submit-button {
+  grid-column: 1/3;
+  grid-row: -1 /-2;
+  align-self: center;
+  justify-self: center;
+  background-color: #1749ff;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-button:hover {
+  background-color: teal;
+}

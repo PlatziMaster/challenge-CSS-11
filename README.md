@@ -4,9 +4,9 @@ CSS Grid: List
 
 ## 🛠 Challenge Done!
 
-<!-- <kbd>
+<kbd>
 <img width="400" src="/assets/result.png" alt="Resultado Final">
-</kbd> -->
+</kbd>
 
 ## 🥕 ¿En qué consiste?
 

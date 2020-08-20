@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e6e8f1;
+}
+.principal-container {
+  width: 30%;
+  height: 290px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+.ubication-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 75px;
+  color: gray;
+}
+.ubication-description {
+  width: 90px;
+  height: 25px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #e8e8e9;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f5f6f8;
+}
+.button-go {
+  justify-items: center;
+}
+.go-button {
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #e8e8e9;
+}
+.go-button > img {
+  width: 25px;
+  height: 25px;
+}
+.checklistCountrys {
+}
+.checklistCountrys > ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  color: gray;
+}
+.country-check {
+  width: 20px;
+  height: 20px;
+  background-color: #e8e8e9;
+}
+.country-check input[type="checkbox"]:checked {
+  color: #2196f3;
+}
+.submit {
+  width: 80%;
+  height: 30px;
+  margin: 10px 10px;
+  background-color: #174aff;
+  color: white;
+  font: "Ubuntu", sans-serif;
+  border-radius: 5px;
+}

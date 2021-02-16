@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------------------- Layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #e7e9f2;
+  font-family: "Montserrat" sans-serif;
+}
+
+section {
+  width: 300px;
+  height: 380px;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  border-radius: 24px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px rgba(7, 30, 97, 0.2);
+}
+
+/* ----------------------- Top Search Bar */
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  max-width: 100%;
+}
+
+.location input {
+  display: inline-block;
+  background-color: #f5f6f8;
+  border: none;
+  padding: 16px 0px;
+  padding-left: 16px;
+  height: 32px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #53545f;
+  border-radius: 24px;
+}
+
+.location button {
+  display: inline-block;
+  background-color: #f5f6f8;
+  border: 2px solid #b6b9bb;
+  padding: 16px;
+  height: 66px;
+  width: 66px;
+  padding: 16px 0px;
+  border-radius: 24px;
+}
+
+.location button i {
+  margin-top: -1px;
+  font-size: 32px;
+}
+
+.location button:hover {
+  background-color: #b6b9bb;
+  border: 2px solid #f5f6f8;
+  cursor: pointer;
+}
+
+/* ----------------------- Checkbox */
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #53545f;
+}
+
+.check {
+  margin: 0px 16px;
+  height: 25px;
+  width: 25px;
+  background-color: #323a4b;
+  border: none;
+  border-radius: 8px;
+}
+/* ----------------------- Bottom Button */
+.btn {
+  width: 100%;
+  height: 66px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  bottom: 0;
+  color: #f5f6f8;
+  background-color: #1653ff;
+}
+
+.btn:hover {
+  color: #f5f6f8;
+  background-color: #2861ff;
+  cursor: pointer;
+}
